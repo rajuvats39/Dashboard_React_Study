@@ -1,0 +1,261 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Main Content */
+main {
+  width: 100%;
+  padding: 0 20px;
+  transition: width 0.3s ease-in-out, 0.3s ease-in-out;
+}
+
+/* Hide Scrollbars */
+::-webkit-scrollbar,
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+/* Card */
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: .5rem;
+  background-color: #fff;
+  margin: 1.25rem 0 1.25rem 0;
+  box-shadow: 0 .25rem .5rem #e6edef;
+
+  .card-head {
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid #edf1f7;
+      font-size: 1rem;
+      font-weight: 600;
+  }
+
+  .card-body {
+      padding: 1rem 1.5rem;
+  }
+}
+
+.margin-r2 {
+  margin-right: 2px;
+}
+
+.mx-n2 {
+  margin: 0 -0.5rem !important;
+}
+
+.mt-n3 {
+  margin-top: -1rem !important;
+}
+
+a {
+  text-decoration: none !important;
+  font-weight: 600;
+  cursor: pointer;
+  color: blue;
+}
+
+a:hover {
+  text-decoration: underline !important;
+}
+
+.sidebar a:hover {
+  text-decoration: none !important;
+}
+
+a.disbled {
+  pointer-events: none;
+  cursor: default;
+}
+
+.cursorLink {
+  cursor: pointer;
+}
+
+.disabledCursor {
+  cursor: not-allowed !important;
+  color: grey;
+}
+
+ul {
+  padding: 0;
+}
+
+.row {
+  --bs-gutter-x: 1.875rem !important;
+  --bs-gutter-y: 3.875rem !important;
+  margin-right: calc(-0.5*var(--bs-gutter-x)) !important;
+  margin-left: calc(-0.2*var(--bs-gutter-y)) !important;
+}
+
+.form-label {
+  font-weight: bold;
+  font-size: 0.813rem;
+  margin-bottom: 0px !important;
+  color: rgb(7, 7, 62);
+}
+
+.value-label {
+  font-weight: 500;
+  font-size: 0.813rem;
+  color: rgb(7, 7, 62);
+}
+
+.section-header {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: rgb(7, 7, 62);
+}
+
+.page-header {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(7, 7, 62);
+}
+
+.modal-header {
+  padding: 0px !important;
+}
+
+.modal-footer {
+  padding: 5px !important;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  height: 3rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ff6347;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  left: 0;
+  background: #000;
+  color: #fff;
+  height: calc(100vh - 6rem);
+  width: 250px;
+  transition: width 0.3s ease-in-out, 0.3s ease-in-out;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+
+/* Display Area */
+.display-area {
+  display: flex;
+  margin-top: 3rem;
+  height: calc(100vh - 6rem);
+  transition: width 0.3s ease-in-out, 0.3s ease-in-out;
+}
+
+/* Footer */
+.footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  height: 3rem;
+  bottom: 0;
+  z-index: 1;
+}
+
+/* Sidebar Top Section */
+.top_section {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  font-size: 30px;
+}
+
+.bars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.bars:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 40%;
+}
+
+/* Sidebar Links */
+.link {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding: 10px 15px;
+  gap: 15px;
+  transition: width 0.3s ease-in-out, 0.3s ease-in-out;
+}
+
+.link:hover,
+.active {
+  background: lightskyblue;
+  color: #000;
+}
+
+/* Link Icons */
+.icon,
+.link_text {
+  font-size: px;
+}
+
+/* Submenu */
+.submenu {
+  padding-left: 20px;
+}
+
+.sublink {
+  display: block;
+  padding: 5px 20px;
+  color: inherit;
+  transition: width 0.3s ease-in-out, 0.3s ease-in-out;
+}
+
+.sublink:hover {
+  background: lightskyblue;
+}
